@@ -1,0 +1,41 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/대표이야기",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/대표이야기/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/대표이야기/index.html",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/%EB%8C%80%ED%91%9C%EC%9D%B4%EC%95%BC%EA%B8%B0",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/%EB%8C%80%ED%91%9C%EC%9D%B4%EC%95%BC%EA%B8%B0/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/%EB%8C%80%ED%91%9C%EC%9D%B4%EC%95%BC%EA%B8%B0/index.html",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ]
+}
